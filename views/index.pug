@@ -1,0 +1,53 @@
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+title Gym Website
+style 
+   include ../static/style.css
+
+link(rel="preconnect", href="https://fonts.gstatic.com")
+link(href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap", rel="stylesheet")
+link(rel="preconnect", href="https://fonts.gstatic.com")
+link(href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap", rel="stylesheet")
+link(rel="preconnect", href="https://fonts.gstatic.com")
+link(href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap", rel="stylesheet")
+header
+  //  for logo 
+  .left
+    #title Be Extreme
+    #tagline
+      h2.firstline if it doesn't
+      h1.secondline challenge you,
+      h2.firstline it doesn't
+      h1.secondline change you...
+      
+        
+        
+  //  for navbar 
+  .mid
+    ul.navbar
+      li
+        a.active(href="/") Home
+      li
+        a.normal(href="/aboutus") About Us
+      li
+        a.normal(href="/services") Services
+      li
+        a.normal(href="/gallery") Gallary
+      li
+        a.normal(href="/contact") Contact Us
+.container
+  h1
+    | User Login and Ragistration
+    br
+  form.loginform#contact(action="/" method="POST" )
+    .form-group
+      input(type="text",name="name" placeholder="Enter your name")
+    .form-group
+      input(type="text",name="age" placeholder="Enter your age")
+    .form-group
+      input(type="text",name="gender" placeholder="Enter your gender")
+    .form-group
+      input(type="text",name="address" placeholder="Enter your location")
+    button.btn Submit
+    
